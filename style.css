@@ -1,0 +1,157 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+ body{
+position: relative;
+/* overflow: hidden; */
+} 
+
+main{
+background-image: url(./images/collab.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-color: rgb(154, 174, 187);
+background-blend-mode: overlay;
+/* position: fixed;
+top: 0;
+height: 100%;
+width: 100%;
+left: 0;
+background-attachment: fixed;
+z-index: -1; */
+}
+
+.header{
+text-align: center;
+color: #fff;
+padding: 2rem 3rem;
+margin-left: 1.2rem;
+}
+
+.header p{
+font-style: italic;
+}
+
+#form{
+width: 38%;
+margin: auto;
+height: 100%;
+min-height:100vh;
+padding:20px 0;
+background-color: #262948;
+border-radius: 15px;
+position: relative;
+}
+.form-wrapper{
+padding-left: 1.5rem;
+}
+
+label{
+color:whitesmoke;
+font-size: 1.2rem;
+}
+
+
+.name, .email, .age, .role, .recommendation, .features, .improve, .comment{
+margin-bottom: 1rem;
+}
+.improve label input option{
+color: #fff;
+}
+select{
+width: 80%;
+height: 2rem;
+border-radius: 5px;
+}
+
+.age input{
+width: 85%;
+height: 2rem;
+border-radius: 5px;
+}
+
+select option{
+padding:3rem;
+line-height: 1.4;
+font-size: 1rem;
+}
+
+.recommendation input, .improve input{
+margin-bottom: 7px;
+}
+
+.name input, .email input{
+width: 85%;
+height: 2rem;
+border-radius: 5px;
+}
+
+input::placeholder{
+padding-left: 15px;
+font-size: 1rem;
+}
+
+textarea{
+width: 85%;
+height: 7rem;
+}
+
+textarea::placeholder{
+font-size: 1rem;
+}
+button{
+width: 85%;
+height: 2.5rem;
+font-size: 1.2rem;
+color: #fff;
+background-color: rgb(6, 63, 6);
+border: none;
+border-radius: 5px;
+margin-top: 1rem;
+}
+
+/* input[type="radio"]:focus, 
+input[type="checkbox"]:focus,
+input[type="text"]:focus{
+outline: none !important;
+box-shadow: 0 0 0 2px  #007bff;
+} */
+
+input:focus, 
+textarea:focus{
+ outline: none;   
+ box-shadow: 0 0 0 2px #007bff;
+}
+
+@media screen and (max-width:700px){
+#form{
+width: 50%;
+}
+
+label{
+font-size: 1rem;
+}
+
+select option{
+font-size: 0.8rem;
+}
+}
+
+@media screen and (max-width:500px){
+    #form{
+    width: 70%;
+    }
+label{
+font-size: 1rem;
+}
+
+select option{
+font-size: 0.7rem;
+}
+}
+
